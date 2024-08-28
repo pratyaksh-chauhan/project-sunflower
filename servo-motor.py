@@ -3,13 +3,13 @@ import time
 # upper chine
 myservo = Servo(12)
 # dae bae
-myservo2 = Servo(13)
+# myservo2 = Servo(13)
 
 angle = 90
 direction = 1
 
-angle2 = 90
-direction2 = 1
+# angle2 = 90
+# direction2 = 1
 
 
 while 1 :
@@ -33,13 +33,13 @@ while 1 :
     # myservo.write(80)
     # # time.sleep(1)
     # # Servo.stop()
-    myservo2.write(angle2)
+    # myservo2.write(angle2)
 
-    if direction2 == 1:
-        angle2 = angle2 + .2
-    else:
-        angle2 = angle2 - .2 
+    # if direction2 == 1:
+    #     angle2 = angle2 + .2
+    # else:
+    #     angle2 = angle2 - .2 
 
-    if angle2 > 140 or angle2 < 1:
-        direction2 = direction2 * -1
+    # if angle2 > 140 or angle2 < 1:
+    #     direction2 = direction2 * -1
 

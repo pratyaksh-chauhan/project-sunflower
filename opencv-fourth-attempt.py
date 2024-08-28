@@ -11,8 +11,11 @@ cap = cv2.VideoCapture(0)
 if cap.isOpened() == False:
     print("Error Opening Video Stream Or File")
 
-lower = np.array([0, 0, 225])
-upper = np.array([201, 66, 255])
+# lower = np.array([0, 0, 225])
+# upper = np.array([201, 66, 255])
+
+lower = np.array([15, 120, 20])
+upper = np.array([35, 255, 255])
 
 max_sweep_angle_horizontal = 120
 max_sweep_angle_vertical = 60
@@ -49,7 +52,7 @@ while cap.isOpened():
 
                 print("Calculated - " , calculated_sweep_angle_horizontal, ", ", calculated_sweep_angle_vertical)
                 horizontalServo.write(calculated_sweep_angle_horizontal)
-                verticalServo.write(calculated_sweep_angle_vertical)
+                verticalServo.write(calculated_sweep_angle_horizontal)
 
     if ret:
         cv2.imshow('frame', frame)

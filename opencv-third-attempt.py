@@ -49,7 +49,7 @@ while cap.isOpened():
 
                 # print(diff_x, ", ", diff_y)
                 print(img_center_x * angle_per_pixel)
-                myservo.write(img_center_x * angle_per_pixel)
+                # myservo.write(img_center_x * angle_per_pixel)
                 # time.sleep(3)
                 # myservo.write(0)
                 # time.sleep(3)
